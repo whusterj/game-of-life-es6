@@ -1,7 +1,64 @@
 Conway's Game of Life
 =====================
 
-An Infinite, Two-Dimensional Grid.
+Installation
+------------
+
+A Vagrantfile is included for spinning up a VM running Ubuntu 14.04. This is not required to run the app, but it helps.
+
+Clone the repository and get the vagrant box going:
+
+```
+$ vagrant up
+```
+
+Install node version manager:
+
+```
+$ curl https://raw.githubusercontent.com/creationix/nvm/v0.11.1/install.sh | bash
+```
+
+Install the latest stable version of nodejs and start using it (at the time of this writing, the latest is 0.10):
+
+```
+$ nvm install stable
+$ nvm use 0.10
+```
+
+Descend into the game-of-life directory:
+
+```
+cd ~/game-of-life
+```
+
+And install our app dependencies with node. If you're hosting a vagrant VM on windows, the `--no-bin-links` flag is mandatory:
+
+```
+$ npm install --no-bin-links
+```
+
+Finally, we need to install phantomjs, karma-cli, and grunt-cli globally, so we can run them from the command line:
+
+```
+npm install -g karma-cli
+npm install -g phantomjs
+npm install -g grunt-cli
+```
+
+
+Run the Tests
+-------------
+
+```
+$ karma run karma.conf.js
+```
+
+Rules of Conway's Game of Life
+------------------------------
+
+These rules included here for easy reference.
+
+Takes place on an infinite, two-dimensional grid.
 
 Each tick of the simulation evaluates the following rules and updates each cell of the grid:
 
