@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game of Life &middot; JavaScript</title>
+</head>
+<body>
+  <h3>Game of Life</h3>
+
+  <button id="randomize">Randomize</button>
+  <button id="play">Play</button>
+  <button id="stop">Stop</button>
+  <button id="step">Step</button>
+
+  <pre>Calculation Time: <span id="calcTime"></span></pre>
+
+  <pre id="gameOfLife"></pre>
+
+  <script src="lib/lodash.min.js"></script>
+  <script data-main="dist/gameOfLife"
+          src="lib/require.min.js">
+  </script>
+
+</body>
+</html>

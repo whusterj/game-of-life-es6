@@ -1,0 +1,22 @@
+{
+  "name": "game-of-life",
+  "version": "1.0.0",
+  "description": "JavaScript implementation of Conway's Game of Life.",
+  "main": "js/game-of-life.js",
+  "scripts": {
+    "test": "karma"
+  },
+  "dependencies": {
+    "express": ">= 1.2.0"
+  },
+  "author": "William Huster <whusterj@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-6to5": "^1.0.1",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "karma": "^0.12.28",
+    "karma-jasmine": "^0.3.2"
+  }
+}
