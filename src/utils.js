@@ -1,4 +1,6 @@
 /// Custom Utilities
+import { MissingParameter } from 'exceptions';
+
 
 export function isUndefined (value) {
   return typeof(value) === 'undefined';
