@@ -1,6 +1,8 @@
 Conway's Game of Life
 =====================
 
+Implemented as a test of ES6 functionality, especially modules. The source is preprocessed using grunt-6to5, which transpiles to ES5 with AMD modules.
+
 Installation
 ------------
 
@@ -51,7 +53,7 @@ Rules of Conway's Game of Life
 
 These rules included here for easy reference.
 
-Takes place on an infinite, two-dimensional grid.
+Takes place on an infinite, two-dimensional grid (not implemented this way).
 
 Each tick of the simulation evaluates the following rules and updates each cell of the grid:
 
@@ -63,6 +65,8 @@ Each tick of the simulation evaluates the following rules and updates each cell 
 
 Made-up Additional Rules:
 -------------------------
+
+Some ideas for an added challenge, if I ever come back to this....
 
 TODO: Experiment wtih removing the overcrowding restriction
 
